@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh; 
+    background: rgb(21, 16, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.esquerda > h1{
+    color: rgb(73, 230, 170);
+}
+
+.direita{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: rgb(81, 69, 94);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgb(12, 12, 12);
+}
+
+.card-login > h1{
+    font-size: 42px;
+    font-weight: 800;
+    margin: 0;
+    color: rgb(73, 230, 170);
+}
+
+.textfield{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgb(209, 163, 231);
+    color: rgb(188, 228, 228);
+    font-size: 12pt;
+    box-shadow:rgb(12, 12, 12);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: rgb(188, 228, 228);
+    margin-bottom: 10px;
+}
+
+.textfield::placeholder{
+    color: rgb(253, 253, 253);
+}
+
+.btn-login{
+    width: 55%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: rgb(51, 3, 51);
+    background: rgb(73, 230, 170);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px 12px rgb(60, 117, 86);
+}
+
+.left-login-image{
+    width: 35vw;
+    font-size: 3vw;
+}
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main{
+        flex-direction: column;
+    }
+    .esquerda > h1{
+        display: none;
+    }
+    .esquerda{
+        width: 100%;
+        height: auto;
+    }
+    .direita{
+        width: 100%;
+        height: auto;
+    }
+}    
